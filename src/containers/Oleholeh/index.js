@@ -1,6 +1,5 @@
 import React from "react";
 import { useParams } from "react-router";
-import Nav from "../../components/Nav";
 import Query from "../../components/Query";
 import ReactHtmlParser from "react-html-parser";
 import Oleholeh_QUERY from "../../queries/gifts/gift";
@@ -78,10 +77,6 @@ const Oleholeh = () => {
               </div>
             </div>
           </div>
-          <div className="col-md-4">
-            <Nav />
-          </div>
-
         </div>
       </div>
     </header>

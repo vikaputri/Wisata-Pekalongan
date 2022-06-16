@@ -3,7 +3,6 @@ import { useParams } from "react-router";
 import Destinations from "../../components/Destinations";
 import Query from "../../components/Query";
 import CATEGORY_ARTICLES_QUERY from "../../queries/category/destination";
-import { Link } from "react-router-dom";
 
 const Category = () => {
   let { id } = useParams();
@@ -13,17 +12,6 @@ const Category = () => {
       {({ data: { categories }, fetchMore}) => {
           return (
             <header className="py-5 px-2">
-              
-                <h1>
-                  <nav aria-label="breadcrumb">
-                    <ol className="breadcrumb">
-                      <li className="breadcrumb-item">
-                        <Link className="text-decoration-none text-reset" to="/">Destination</Link>
-                      </li>  
-                      <li className="breadcrumb-item active" aria-current="page">{categories.name}</li>
-                    </ol>
-                  </nav>
-                </h1>
 
               <Destinations articles={categories.article} />
 
