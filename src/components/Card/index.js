@@ -10,7 +10,7 @@ const Card = ({ article }) => {
         <div>
           <img
             className="card-img-top lazy-image"
-            src={`http://wisata-pekalongan.herokuapp.com/${imageUrl}`}
+            src={`http://wisata-pekalongan.herokuapp.com${imageUrl}`}
             alt={imageUrl}
             onError={
               (e) => 
