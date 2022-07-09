@@ -22,7 +22,7 @@ const Oleholeh = () => {
                         <div className="jumbotron"> 
                           <h1 className="text-center mb-5">{oleholeh.title}</h1>   
                           <div className="mb-5">
-                            <img src={`http://wisata-pekalongan.herokuapp.com/${imageUrl}`}
+                            <img src={`http://wisata-pekalongan.herokuapp.com${imageUrl}`}
                               alt={imageUrl}
                               onError={
                                 (e) => {
