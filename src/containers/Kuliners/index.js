@@ -32,7 +32,7 @@ const Kuliners = () => {
                             <div>
                               <img
                                 className="card-img-top lazy-image"
-                                src={`http://wisata-pekalongan.herokuapp.com/${edge.node.image}`}
+                                src={`http://wisata-pekalongan.herokuapp.com${edge.node.image}`}
                                 alt={edge.node.image}
                                 onError={
                                   (e) => 
